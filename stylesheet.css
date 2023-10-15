@@ -3,8 +3,47 @@
 
 
 body {
-    background-image: url('Assets/leafBackground.svg');
-    background-size: cover;
     margin: 0;
     padding: 0;
+}
+
+.navbar {
+    background-color: white;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li{
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat", "sans-serif";
+    font-weight: 500;
+}
+
+.title {
+    background-image: url('Assets/leafBackground.svg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    font-family: "Montserrat", "sans-serif";
+    font-size: 8em;
 }
