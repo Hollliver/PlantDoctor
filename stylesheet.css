@@ -73,16 +73,145 @@ h1 {
 }
 
 
-.scrollToView {
+.scrollDown {
     width: 30px;
     height: 30px;
     position: relative;
     top: 100px;
 }
 
-.scrollToView:hover {
+.scrollDown:hover {
     content: url('Assets/downArrowRed.svg');
 }
 
+.tutorial {
+    background-image: url(Assets/leafBackground.svg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.scrollUp {
+    margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+}
 
+.scrollUp:hover {
+    content: url('Assets/downArrowRed.svg');
+    transform: rotate(180deg);
+}
+
+.tutorialWrapper {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    background-color: rgba(226, 239, 238, 0.69);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.summary {
+    width: 70%;
+    height: 15%;
+    background-color: #d2584e;
+    border: none;
+    padding: 10px 15px;
+    font-family: "Montserrat", "sans-serif";
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    
+
+}
+
+/* WEBSITE TUTORIAL CAROUSEL */
+.tutorialImage {
+    width: 60%;
+    height: 50%;
+    background-color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.column1 {
+    background-color: #6bb153;
+    margin-left: 10%;
+    width: 10%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column2 {
+    background-color: white;
+    margin: 0;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column3 {
+    background-color: #6bb153;
+    margin-right: 10%;
+    width: 10%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.previous {
+    margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(90deg);
+}
+
+.previous:hover {
+    content: url('Assets/downArrowRed.svg');
+    transform: rotate(90deg);
+}
+
+.next {
+    margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
+    transform: rotate(270deg);
+}
+
+.next:hover {
+    content: url('Assets/downArrowRed.svg');
+    transform: rotate(270deg);
+}
+
+.tutorialText {
+    width: 40%;
+    height: 15%;
+    background-color: #d2584e;
+    border: none;
+    padding: 10px 15px;
+    font-family: "Montserrat", "sans-serif";
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+}
