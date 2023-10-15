@@ -1,34 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-
-
 body {
     margin: 0;
     padding: 0;
 }
 
-.navbar {
+.navBar {
     background-color: white;
     padding: 10px;
+    padding-left: 0px;
+    
 }
 
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.navLinks {
     display: flex;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
 }
 
-.navbar li{
-    margin-right: 20px;
-}
-
-.navbar a {
+.navLinks a {
     text-decoration: none;
-    color: black;
+    color: #d2584e;
     font-family: "Montserrat", "sans-serif";
     font-weight: 500;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px, 0px, 10px, 0px;
 }
+
+.navLinks a:hover {
+    background-color: #6bb153;
+    color: white;
+}
+
 
 .title {
     background-image: url('Assets/leafBackground.svg');
@@ -36,14 +41,48 @@ body {
     background-position: center;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
+    justify-content: center; 
+    
 }
 
 h1 {
     margin: 0;
     font-family: "Montserrat", "sans-serif";
     font-size: 8em;
+    color: white;
 }
+
+.goTo {
+    background-color: #d2584e;
+    border: none;
+    padding: 10px 15px;
+    font-family: "Montserrat", "sans-serif";
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    position: relative; 
+    top: 50px;    
+}
+
+.goTo:hover {
+    background-color: #6bb153;
+    color: white;
+}
+
+
+.scrollToView {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 100px;
+}
+
+.scrollToView:hover {
+    content: url('Assets/downArrowRed.svg');
+}
+
+
+
