@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
 }
-
+/*Top navigation bar */
 .navBar {
     background-color: white;
     padding: 10px;
@@ -34,7 +34,7 @@ body {
     color: white;
 }
 
-
+/*Hero section*/
 .title {
     background-image: url('Assets/leafBackground.svg');
     background-size: cover;
@@ -53,7 +53,7 @@ h1 {
     font-size: 8em;
     color: white;
 }
-
+/*Button to plant shelf */
 .goTo {
     background-color: #d2584e;
     border: none;
@@ -72,7 +72,7 @@ h1 {
     color: white;
 }
 
-
+/*Scroll to tutorial section*/
 .scrollDown {
     width: 30px;
     height: 30px;
@@ -94,7 +94,7 @@ h1 {
     align-items: center;
     justify-content: center;
 }
-
+/*Scroll to hero section*/
 .scrollUp {
     margin-bottom: 10px;
     width: 30px;
@@ -134,8 +134,8 @@ h1 {
 
 }
 
-/* WEBSITE TUTORIAL CAROUSEL */
-.tutorialImage {
+/*Stores carousel and arrow columns*/
+.columns {
     width: 60%;
     height: 50%;
     background-color: white;
@@ -148,7 +148,7 @@ h1 {
     align-items: center;
     height: 100%;
 }
-
+/*previous arrow column*/
 .column1 {
     background-color: #6bb153;
     margin-left: 10%;
@@ -159,16 +159,52 @@ h1 {
     justify-content: center;
 }
 
+/*Holds carousel*/
 .column2 {
-    background-color: white;
-    margin: 0;
-    width: 60%;
-    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    width: 60%;
+    height: 80%;         
 }
 
+.slide__Image {
+    width:100%;
+}
+
+.slider {
+    display: block;
+    position:relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 10px;
+    background-color: white;
+    overflow: hidden;
+}
+  
+  /*Individual slides - stacked on top of each other */
+  .slider__slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+      font-weight: bold;   
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: 1s;
+      opacity: 0;
+  }
+  
+  /*Makes slide with slider__slide and active element visible */
+  .slider__slide.active {
+      opacity: 1;
+  }
+
+/*Next arrow column*/
 .column3 {
     background-color: #6bb153;
     margin-right: 10%;
@@ -179,30 +215,47 @@ h1 {
     justify-content: center;
 }
 
-.previous {
+/*Button animation*/
+#previous {
     margin-bottom: 10px;
     width: 30px;
     height: 30px;
     transform: rotate(90deg);
 }
-
-.previous:hover {
+#previous:hover {
     content: url('Assets/downArrowRed.svg');
     transform: rotate(90deg);
 }
-
-.next {
+#next {
     margin-bottom: 10px;
     width: 30px;
     height: 30px;
     transform: rotate(270deg);
 }
-
-.next:hover {
+#next:hover {
     content: url('Assets/downArrowRed.svg');
     transform: rotate(270deg);
 }
 
+/* Breadcrumbs 
+.slider__navlink {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px #fff solid;
+    background-color: red;
+    opacity: 1;
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+.slider__navlink.active {
+    background-color: blue;
+    border: 1px #333 solid;
+}
+*/
+/*EDIT - MAY NEED ADDING TO CAROUSEL JS*/
 .tutorialText {
     width: 40%;
     height: 15%;
@@ -215,3 +268,4 @@ h1 {
     color: white;
     border-radius: 50px;
 }
+

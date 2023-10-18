@@ -5,9 +5,12 @@
         <meta charset="utf-8" />
         <meta name="author" content="Holly Norman" />
         <link rel="stylesheet" href="stylesheet.css" />
+        <!--double check if correct method-->
+        <script src="./plantShelf.js"> </script>
     </head>
 
-    <body>        
+    <body>  
+        <!--Top navigation bar-->      
         <header>
             <nav class="navBar">
                 <ul class="navLinks">
@@ -17,23 +20,56 @@
             </nav>        
         </header> 
 
+        <!--Hero image and title-->
         <section class="title">
             <h1>Plant Doctor</h1>
             <button class="goTo">Go to Plant Shelf</button>
             <img class="scrollDown" src="Assets/downArrowWhite.svg" alt="down arrow button" >              
         </section>
 
-
-
+        <!--tutorial box-->
         <section class="tutorial">
+            <!--scroll to top section/hero image-->
             <img class="scrollUp" src="Assets/downArrowWhite.svg" alt="down arrow button" >
             <div class="tutorialWrapper"> 
                 <h2 class="summary">Lorem ipsum</h2>
-                <div class="tutorialImage">
-                    <div class="column1"><img class="previous" src="Assets/downArrowWhite.svg" alt="previous slide button" ></div>
-                    <div class="column2">2</div>
-                    <div class="column3"><img class="next" src="Assets/downArrowWhite.svg" alt="next slide button" ></div>
-                </div>
+                <div class="columns">
+                    <!--prev arrow-->
+                    <div class="column1">
+                        <img id="previous" src="Assets/downArrowWhite.svg" alt="previous slide button" >
+                    </div>
+                    <!--carousel-->
+                    <div class="column2">
+                        <div class="slider">
+                            <div class="slider__slides">
+                                <div class="slider__slide active">
+                                <img class="slide__Image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Shakuzoji_Kuginuki_Jizo-3586.jpg/800px-Shakuzoji_Kuginuki_Jizo-3586.jpg" alt="A rooftop in Japan" />
+                                </div>
+                                <div class="slider__slide">
+                                <img class="slide__Image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Stirling_Castle_Main_Gate.jpg/800px-Stirling_Castle_Main_Gate.jpg" alt="A castle in Scotland" />
+                                </div>
+                                <div class="slider__slide">
+                                <img class="slide__Image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Xiaoqingshan_Farm_Product_Market%2C_Puding_County%2C_Guizhou%2C_China2.jpg/800px-Xiaoqingshan_Farm_Product_Market%2C_Puding_County%2C_Guizhou%2C_China2.jpg" alt="A street market in China" />
+                                </div>
+                                <div class="slider__slide">
+                                <img class="slide__Image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Patung_Buddha_Tidur_Trowulan.jpg/800px-Patung_Buddha_Tidur_Trowulan.jpg" alt="A statue of the Buddha in Thailand" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--next arrow-->
+                    <div class="column3">
+                        <img id="next" src="Assets/downArrowWhite.svg" alt="next slide button" >
+                    </div>
+                </div> 
+                <!--breadcrumbs-->
+                <div class="slider__nav">
+                    <div class="slider__navlink active"></div>
+                    <div class="slider__navlink"></div>
+                    <div class="slider__navlink"></div>
+                    <div class="slider__navlink"></div>
+                  </div>
+                <!--carousel text-->
                 <p class="tutorialText">Tutorial text</p>
             </div>
         </section>
