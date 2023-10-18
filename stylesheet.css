@@ -70,6 +70,7 @@ h1 {
 .goTo:hover {
     background-color: #6bb153;
     color: white;
+    cursor: pointer;
 }
 
 /*Scroll to tutorial section*/
