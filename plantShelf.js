@@ -31,3 +31,9 @@ document.querySelectorAll('.slider__navlink').forEach((bullet, bulletIndex) => {
         }
     })
 })
+
+// Scroll to element
+ function scrollToElement(targetId) {
+    let targetElement = document.getElementById(targetId);
+    targetElement.scrollIntoView({behaviour: 'smooth'});
+ }

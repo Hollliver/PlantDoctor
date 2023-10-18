@@ -12,7 +12,7 @@
     <body> 
         <!--Top navigation bar-->      
         <header>
-            <nav class="navBar">
+            <nav class="navBar" id="top">
                 <ul class="navLinks">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="plantShelfTool.html">Plant Shelf</a></li>
@@ -21,22 +21,22 @@
         </header> 
 
         <!--Hero image and title-->
-        <section class="title">
+        <section id="title">
             <h1>Plant Doctor</h1>
             <a href="plantShelfTool.html"><button class="goTo">Go to Plant Shelf</button></a>            
-            <img class="scrollDown" src="Assets/downArrowWhite.svg" alt="down arrow button" >              
+            <img class="scrollDown" src="Assets/downArrowWhite.svg" alt="down arrow button" onclick="scrollToElement('tutorial')">              
         </section>
 
         <!--tutorial box-->
-        <section class="tutorial">
+        <section id="tutorial">
             <!--scroll to top section/hero image-->
-            <img class="scrollUp" src="Assets/downArrowWhite.svg" alt="down arrow button" >
+            <img class="scrollUp" src="Assets/downArrowWhite.svg" alt="down arrow button" onclick="scrollToElement('top')">
             <div class="tutorialWrapper"> 
                 <h2 class="summary">Lorem ipsum</h2>
                 <div class="columns">
                     <!--prev arrow-->
                     <div class="column1">
-                        <img id="previous" class="slider__nav-button" src="Assets/downArrowWhite.svg" alt="previous slide button" >
+                        <img id="previous" class="slider__nav-button" src="Assets/downArrowWhite.svg" alt="previous slide button">
                     </div>
                     <!--carousel-->
                     <div class="column2">

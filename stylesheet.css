@@ -35,7 +35,7 @@ body {
 }
 
 /*Hero section*/
-.title {
+#title {
     background-image: url('Assets/leafBackground.svg');
     background-size: cover;
     background-position: center;
@@ -85,7 +85,7 @@ h1 {
     content: url('Assets/downArrowRed.svg');
 }
 
-.tutorial {
+#tutorial {
     background-image: url(Assets/leafBackground.svg);
     background-size: cover;
     background-position: center;
