@@ -6,10 +6,11 @@
         <meta name="author" content="Holly Norman" />
         <link rel="stylesheet" href="stylesheet.css" />
         <!--double check if correct method-->
-        <script src="./plantShelf.js"> </script>
+        
     </head>
 
-    <body>  
+    <body> 
+        <!--<script src="./plantShelf.js"> </script>-->
         <!--Top navigation bar-->      
         <header>
             <nav class="navBar">
@@ -36,7 +37,7 @@
                 <div class="columns">
                     <!--prev arrow-->
                     <div class="column1">
-                        <img id="previous" src="Assets/downArrowWhite.svg" alt="previous slide button" >
+                        <img id="previous" class="slider__nav-button" src="Assets/downArrowWhite.svg" alt="previous slide button" >
                     </div>
                     <!--carousel-->
                     <div class="column2">
@@ -52,6 +53,7 @@
                                 <img class="slide__Image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Xiaoqingshan_Farm_Product_Market%2C_Puding_County%2C_Guizhou%2C_China2.jpg/800px-Xiaoqingshan_Farm_Product_Market%2C_Puding_County%2C_Guizhou%2C_China2.jpg" alt="A street market in China" />
                                 </div>
                                 <div class="slider__slide">
+                                    <!--This image displays first before javascript-->
                                 <img class="slide__Image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Patung_Buddha_Tidur_Trowulan.jpg/800px-Patung_Buddha_Tidur_Trowulan.jpg" alt="A statue of the Buddha in Thailand" />
                                 </div>
                             </div>
@@ -59,8 +61,8 @@
                     </div>
                     <!--next arrow-->
                     <div class="column3">
-                        <img id="next" src="Assets/downArrowWhite.svg" alt="next slide button" >
-                    </div>
+                        <img id="next" class="slider__nav-button" src="Assets/downArrowWhite.svg" alt="next slide button" >
+                    </div>                    
                 </div> 
                 <!--breadcrumbs-->
                 <div class="slider__nav">
@@ -68,11 +70,11 @@
                     <div class="slider__navlink"></div>
                     <div class="slider__navlink"></div>
                     <div class="slider__navlink"></div>
-                  </div>
+                </div>
                 <!--carousel text-->
                 <p class="tutorialText">Tutorial text</p>
             </div>
         </section>
-
+    <script src="/plantShelf.js"></script>
     </body>
 </html>
