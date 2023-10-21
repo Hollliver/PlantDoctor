@@ -284,3 +284,23 @@ h1 {
     border-radius: 50px;
 }
 
+/* CSS for plantShelfTool.html */
+
+#plant_shelf_title {
+    margin: 0;
+    font-family: "Montserrat", "sans-serif";
+    font-size: 8em;
+    color: white;
+    
+}
+
+#plant_shelf_tool {
+    background-image: url('Assets/leafBackground.svg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
