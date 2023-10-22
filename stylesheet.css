@@ -242,6 +242,7 @@ h1 {
     transform: rotate(270deg);
 }
 
+/* IS THIS NEEDED? */
 #previous::after,
 #next::after {
     border-color: blue;
@@ -331,9 +332,8 @@ h1 {
 
 /* Contains three plant spaces*/
 .outer_grid {
-    width: 100%;
-    height: 100%;  
-    
+    width: 60%;
+    height: 90%;
     display: grid;
     /* 3 columns equal width (plan has 500px width for each column) */
     grid-template-columns: repeat(3, 1fr);
@@ -345,7 +345,7 @@ h1 {
 
 #shelf_1 {
     grid-column: 1/2;
-    grid-row: 2/4;
+    grid-row: 2/4;   
 }
 
 #shelf_2 {
@@ -363,33 +363,53 @@ h1 {
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-columns: 30%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-columns: 100%;
     grid-template-rows: repeat(4, 1fr);
     grid-auto-rows: 25%;
   }
   
-  .shelf_image {
-    background-color: yellow;
-    grid-column: 1/4;
-    grid-row: 1/4;
-  }
-  
-  .information {
-    background-color: orange;
+  .shelf_display {   
+    grid-column: 1/2;
+    grid-row: 1/4;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plant_image {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;    
+}
+
+.shelf_buttons {
     grid-column: 1/2;
     grid-row: 4/5;
-  }
-  
-  .water {
-    background-color: darkblue;
-    grid-column: 2/3;
-    grid-row: 4/5;
-  }
-  
-  .diagnose {
-    background-color: rebeccapurple;
-    grid-column: 3/4;
-    grid-row: 4/5;
-  }
+    display: flex;
+    justify-content: center;
+}
+
+.shelf_buttons img {
+    height: 75%;
+    width: 75%; 
+}
+
+.info img:hover {
+    content: url('#');
+    cursor: pointer;
+}
+
+.water img:hover {
+    content: url('Assets/Buttons/WaterButtonRed.svg');
+    cursor: pointer;
+}
+
+.diagnose img:hover {
+    content: url('#');
+    cursor: pointer;
+}
+
+
+
 
