@@ -1,4 +1,5 @@
-
+// index.html
+// CAROUSEL
 // change slide on next and previous button click
 let slides = document.getElementsByClassName("slider__slide");
 let navlinks = document.getElementsByClassName("slider__navlink");
@@ -37,3 +38,7 @@ document.querySelectorAll('.slider__navlink').forEach((bullet, bulletIndex) => {
     let targetElement = document.getElementById(targetId);
     targetElement.scrollIntoView({behaviour: 'smooth'});
  }
+
+ // plantShelfTool.html
+ // PLANT OBJECTS
+ // SHELF OBJECTS

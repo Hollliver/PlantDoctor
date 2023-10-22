@@ -301,11 +301,12 @@ h1 {
 #plant_shelf_title {
     margin: 0;
     font-family: "Montserrat", "sans-serif";
-    font-size: 8em;
+    font-size: 6em;
     color: white;    
+    margin-bottom: 2%;
 }
 
-#shelf_wrapper {
+#transparent_shelf_wrapper {
       width: 70%;
       height: 70%;
       position: relative;
@@ -317,12 +318,12 @@ h1 {
       justify-content: center;
   }
 
-  #shelf_container {
+   #shelf_container {
     background-image: url('Assets/shelfBackground.svg');
     background-size: cover;
     background-position: center;
-    height: 85%;
-    width: 90%;
+    height: 80%; 
+    width: 80%;
     border-radius: 50px;
     display: flex;
     flex-direction: column;
@@ -423,6 +424,33 @@ h1 {
     cursor: pointer;
 }
 
+.manage_shelf_button_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+   }
+
+.manage_shelf_buttons {
+    background-color: #d2584e;
+    border: none;
+    font-family: "Montserrat", "sans-serif";
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 17px;
+    position: relative; 
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.manage_shelf_buttons:hover {
+    background-color: #6bb153;
+    cursor: pointer;
+}
 
 
 
