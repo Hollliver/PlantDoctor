@@ -375,12 +375,25 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .plant_image {
     object-fit: contain;
     width: 100%;
-    height: 100%;    
+    height: 100%;      
+}
+
+.add_plant {
+    height: 30%;
+    width: 30%;
+    position: absolute;
+    top: 50%;
+}
+
+.add_plant:hover {
+    content: url('Assets/Buttons/AddPlantButtonRed.svg');
+    cursor: pointer;
 }
 
 .shelf_buttons {
@@ -395,8 +408,8 @@ h1 {
     width: 75%; 
 }
 
-.info img:hover {
-    content: url('#');
+.information img:hover {
+    content: url('Assets/Buttons/InfoButtonRed.svg');
     cursor: pointer;
 }
 
@@ -406,7 +419,7 @@ h1 {
 }
 
 .diagnose img:hover {
-    content: url('#');
+    content: url('Assets/Buttons/DiagnoseButtonRed.svg');
     cursor: pointer;
 }
 
