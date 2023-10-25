@@ -40,5 +40,66 @@ document.querySelectorAll('.slider__navlink').forEach((bullet, bulletIndex) => {
  }
 
  // plantShelfTool.html
+// ADD PLANT 3
+
+
+ // FUNCTIONS
+ // + BUTTON TO OPEN CONTAINER
+ 
+
+ 
+ // X BUTTON TO CLOSE CONTAINER -- WORKS!!!
+ function toggleContainer () {
+    var x = document.getElementById("add_plant_3_container");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    }
+    else {
+        x.style.display = "none";
+    }
+
+ }
+
+ 
  // PLANT OBJECTS
+ var houseplants = {
+    caladium: {
+        name: "Caladium",
+        imagePath: "Assets/Plants/Caladium.svg"
+    },
+    chineseMoneyPlant: {
+        name: "Chinese Money Plant",
+        imagePath: "Assets/Plants/ChineseMoneyPlant.svg"
+    },    
+    parlourPalm: {
+        name: "Parlour Palm",
+        imagePath: "Assets/Plants/ParlourPalm.svg"
+    },
+    polkaDotBegonia: {
+        name: "Polka Dot Begonia",
+        imagePath: "Assets/Plants/PolkaDotBegonia.svg"
+    },
+    swissCheesePlant: {
+        name: "Swiss Cheese Plant",
+        imagePath: "Assets/Plants/SwissCheesePlant.svg"
+    }
+ }
+
+ //DOESNT WORK
+//var plantDropdown = document.getElementById('houseplant');
+//var selectedPlantImage = document.getElementById('image_shelf_3');
+//var submitPlantButton = document.getElementById('plant_select_button');
+//submitPlantButton.addEventListener('click', function() {
+//const selectedPlant = plantDropdown.value;
+//selectedPlantImage.src = "Assets/Plants/" + selectedPlant + '.svg';
+//})
+
+function updateImageTest () { // WORKS
+  var imageForUpdate = document.getElementById('image_shelf_3');
+ imageForUpdate.src ="Assets/Plants/SwissCheesePlant.svg";
+    
+}
+
  // SHELF OBJECTS
+ 
+  //EVENT LISTENERS

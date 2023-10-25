@@ -83,13 +83,34 @@
                   </div>                 
                   
                   <div id="shelf_3" class="item">
-                    <!--Contains image and row of small icons/buttons for plant-->
+                    <!--Contains image and row of small icons/buttons for plant-->                    
+                    <!--add plant options div-->
+                    <div id="add_plant_3_container">
+
+                      <!--close container button-->
+                      <button id="close_add_plant" onclick="toggleContainer()">X</button>
+                      <!--content-->
+                      <h3>Shelf 3</h3>
+                      <p id="test"></p>
+                      <!--plant dropdown selection-->
+                      <label for="houseplant_dropdown">Select a houseplant</label>
+                        <select id="houseplant" name="houseplant_dropdown">
+                          <option value="caladium">Caladium</option>
+                          <option value="chineseMoney">Chinese Money Plant</option>
+                          <option value="parlourPalm">Parlour Palm</option>
+                          <option value="polkaDotBegonia">Polka Dot Begonia</option>
+                          <option value="swissCheese">Swiss Cheese Plant</option>
+                        </select>
+                      <!--submit selection button-->
+                      <button id="plant_select_button" type="submit" onclick="updateImageTest(); toggleContainer()" >Submit</button>
+                    </div> <!--CLOSE ADD PLANT CONTAINER-->
+                    
                     <div class="inner_grid">
                       <!--shelf-->
                       <div class="shelf_display">
-                        <img class="plant_image" src="Assets/Plants/EmptyShelf.svg" alt="image for shelf">
-                        <!--ADD PLANT TEST-->
-                        <img class="add_plant" src="Assets/Buttons/AddPlantButton.svg" alt="add plant">
+                        <img id="image_shelf_3" class="plant_image" src="Assets/Plants/EmptyShelf.svg" alt="image for shelf">
+                        <!--ADD PLANT BUTTON-->
+                        <img id="add_plant_3" class="add_plant" src="Assets/Buttons/AddPlantButton.svg" alt="add plant 3" onclick="toggleContainer()">
                       </div>
                       <!--shelf buttons-->
                       <div class="shelf_buttons">
@@ -105,19 +126,18 @@
                         <div class="diagnose">
                           <img src="Assets/Buttons/DiagnoseButton.svg" alt="diagnose button">
                         </div>
-                      </div>
-
-                    </div>
-                  </div>                  
-                </div>
-              </div> 
+                      </div> <!--close shelf buttons-->
+                    </div> <!-- close inner_grid-->
+                    
+                  </div>  <!--close shelf 3-->                
+                </div> <!-- close outer grid-->
+              </div> <!-- close shelf container-->
 
               <!--EDIT and SAVE buttton. Edit allows shelf deletion. Save links to save function.-->
               <div class="manage_shelf_button_container">
                 <button id="edit_button" class="manage_shelf_buttons">Edit</button></a>
                 <button id="save_button" class="manage_shelf_buttons">Save</button></a>
               </div> <!--close manage shelf button container-->
-              </div> <!--close shelf container-->
             </div> <!-- close transparent shelf wrapper-->
           </section>
 

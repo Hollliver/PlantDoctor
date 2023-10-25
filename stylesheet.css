@@ -359,6 +359,39 @@ h1 {
     grid-row: 2/4;
 }
 
+/*add plant to shelf*/
+#add_plant_3_container { 
+    display: none;
+    width: 100%;
+    height: 80%;
+    border: 5px solid #d2584e;
+    border-radius: 50px;
+    padding: 10%;
+    position: relative;
+}
+
+
+#close_add_plant {
+    width: 5%;
+    height: 5%;
+    /* fix position to top right corner */
+}
+
+#plant_select_button {
+    background-color: #6bb153;
+    border: none;
+    padding: 10px 15px;
+    font-family: "Montserrat", "sans-serif";
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    position: relative; 
+    cursor: pointer;
+    
+}
+
+
 /*individual shelves */
 .inner_grid {
     width: 100%;
