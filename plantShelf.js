@@ -39,18 +39,11 @@ document.querySelectorAll('.slider__navlink').forEach((bullet, bulletIndex) => {
     targetElement.scrollIntoView({behaviour: 'smooth'});
  }
 
- // plantShelfTool.html
-// ADD PLANT 3
-
-
- // FUNCTIONS
- // + BUTTON TO OPEN CONTAINER
+// plantShelfTool.html
  
-
- 
- // X BUTTON TO CLOSE CONTAINER -- WORKS!!!
- function toggleContainer () {
-    var x = document.getElementById("add_plant_3_container");
+ // toggle add plant container
+ function toggleContainer (containerId) {
+    var x = document.getElementById(containerId);
     if (x.style.display === "none") {
         x.style.display = "block";
     }
@@ -59,47 +52,21 @@ document.querySelectorAll('.slider__navlink').forEach((bullet, bulletIndex) => {
     }
 
  }
-
- 
- // PLANT OBJECTS
- var houseplants = {
-    caladium: {
-        name: "Caladium",
-        imagePath: "Assets/Plants/Caladium.svg"
-    },
-    chineseMoneyPlant: {
-        name: "Chinese Money Plant",
-        imagePath: "Assets/Plants/ChineseMoneyPlant.svg"
-    },    
-    parlourPalm: {
-        name: "Parlour Palm",
-        imagePath: "Assets/Plants/ParlourPalm.svg"
-    },
-    polkaDotBegonia: {
-        name: "Polka Dot Begonia",
-        imagePath: "Assets/Plants/PolkaDotBegonia.svg"
-    },
-    swissCheesePlant: {
-        name: "Swiss Cheese Plant",
-        imagePath: "Assets/Plants/SwissCheesePlant.svg"
-    }
- }
-
-function updateShelf() {
+// update shelf with image for plant selection
+function updateShelf(imageId, dropdownId) {
     //get correct shelf space for image
-    let imageForUpdate = document.getElementById('image_shelf_3');
+    let imageForUpdate = document.getElementById(imageId);
     //get plant name for display
-    let selectedPlant = document.getElementById('houseplant');
+    let selectedPlant = document.getElementById(dropdownId);
     let plant = selectedPlant.value;
     // change shelf img src to display houseplant
     imageForUpdate.src ="Assets/Plants/" + plant + ".svg";
 }
 
-function removeAddPlantButton() {
-    let addPlantButton = document.getElementById('add_plant_3');
+// remove add plant button once selection is made
+function removeAddPlantButton(addButtonId) {
+    let addPlantButton = document.getElementById(addButtonId);
     addPlantButton.style.display = "none";
 }
 
- // SHELF OBJECTS
- 
-  //EVENT LISTENERS
+
