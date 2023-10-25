@@ -424,7 +424,7 @@ h1 {
     grid-auto-rows: 25%;
   }
   
-  .shelf_display {   
+.shelf_display {   
     grid-column: 1/2;
     grid-row: 1/4;  
     display: flex;

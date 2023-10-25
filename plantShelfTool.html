@@ -35,7 +35,7 @@
                     <!--add plant selection div-->
                     <div id="add_plant_1_container">
                       <!--button to close add plant container-->
-                      <button class="close_add_plant" onclick="toggleContainer('add_plant_1_container')">X</button>
+                      <button class="close_add_plant" onclick="toggleGrid('plant_display_1'); toggleContainer('add_plant_1_container')">X</button>
                       <!--content-->
                       <h3>Shelf 1</h3>
                       <!--plant dropdown selection-->
@@ -48,15 +48,15 @@
                           <option value="swissCheesePlant">Swiss Cheese Plant</option>
                         </select>
                         <!--submit selection button-->
-                        <button id="plant_select_button_1" class="plant_select_button" type="submit" onclick="updateShelf('image_shelf_1', 'houseplant_1'); removeAddPlantButton('add_plant_1'); toggleContainer('add_plant_1_container')">Submit</button>
+                        <button id="plant_select_button_1" class="plant_select_button" type="submit" onclick="updateShelf('image_shelf_1', 'houseplant_1'); removeAddPlantButton('add_plant_1'); toggleContainer('add_plant_1_container'); toggleGrid('plant_display_1')">Submit</button>
                     </div> <!--close add plant container-->
                     <!--shelf display after plant selection-->
-                    <div class="inner_grid">
+                    <div id="plant_display_1" class="inner_grid">
                       <!--shelf-->
                       <div class="shelf_display">
                         <img id="image_shelf_1" class="plant_image" src="Assets/Plants/EmptyShelf.svg" alt="image for shelf">
                         <!--ADD PLANT BUTTON-->
-                        <img id="add_plant_1" class="add_plant" src="Assets/Buttons/AddPlantButton.svg" alt="add plant 1" onclick="toggleContainer('add_plant_1_container')">
+                        <img id="add_plant_1" class="add_plant" src="Assets/Buttons/AddPlantButton.svg" alt="add plant 1" onclick="toggleGrid('plant_display_1'); toggleContainer('add_plant_1_container')">
                       </div>
                       <!--shelf buttons-->
                       <div class="shelf_buttons">
@@ -82,7 +82,7 @@
                     <!--add plant selection div-->
                     <div id="add_plant_2_container">
                       <!--button to close add plant container-->
-                      <button class="close_add_plant" onclick="toggleContainer('add_plant_2_container')">X</button>
+                      <button class="close_add_plant" onclick="toggleGrid('plant_display_2'); toggleContainer('add_plant_2_container')">X</button>
                       <!--content-->
                       <h3>Shelf 2</h3>
                       <!--plant dropdown selection-->
@@ -95,15 +95,15 @@
                           <option value="swissCheesePlant">Swiss Cheese Plant</option>
                         </select>
                       <!--submit selection button-->
-                      <button id="plant_select_button_2" class="plant_select_button" type="submit" onclick="updateShelf('image_shelf_2', 'houseplant_2'); removeAddPlantButton('add_plant_2'); toggleContainer('add_plant_2_container')">Submit</button>
+                      <button id="plant_select_button_2" class="plant_select_button" type="submit" onclick="updateShelf('image_shelf_2', 'houseplant_2'); removeAddPlantButton('add_plant_2'); toggleContainer('add_plant_2_container'); toggleGrid('plant_display_2')">Submit</button>
                     </div> <!-- close add plant container-->
                     <!--shelf display after plant selection-->
-                    <div class="inner_grid">
+                    <div id="plant_display_2" class="inner_grid">
                       <!--shelf-->
                       <div class="shelf_display">
                         <img id="image_shelf_2" class="plant_image" src="Assets/Plants/EmptyShelf.svg" alt="image for shelf">
                         <!--ADD PLANT BUTTON-->
-                        <img id="add_plant_2" class="add_plant" src="Assets/Buttons/AddPlantButton.svg" alt="add plant 2" onclick="toggleContainer('add_plant_2_container')">
+                        <img id="add_plant_2" class="add_plant" src="Assets/Buttons/AddPlantButton.svg" alt="add plant 2" onclick="toggleContainer('add_plant_2_container'); toggleGrid('plant_display_2')">
                       </div>
                       <!--shelf buttons-->
                       <div class="shelf_buttons">
@@ -129,7 +129,7 @@
                     <!--add plant selection div-->
                     <div id="add_plant_3_container">
                       <!--button to close add plant container-->
-                      <button class="close_add_plant" onclick="toggleContainer('add_plant_3_container')">X</button>
+                      <button class="close_add_plant" onclick="toggleContainer('add_plant_3_container'); toggleGrid('plant_display_3')">X</button>
                       <!--content-->
                       <h3>Shelf 3</h3>
                       <!--plant dropdown selection-->
@@ -142,16 +142,16 @@
                           <option value="swissCheesePlant">Swiss Cheese Plant</option>
                         </select>
                       <!--submit selection button-->
-                      <button id="plant_select_button_3" class="plant_select_button" type="submit" onclick="updateShelf('image_shelf_3', 'houseplant_3'); removeAddPlantButton('add_plant_3'); toggleContainer('add_plant_3_container')" >Submit</button>
+                      <button id="plant_select_button_3" class="plant_select_button" type="submit" onclick="updateShelf('image_shelf_3', 'houseplant_3'); removeAddPlantButton('add_plant_3'); toggleContainer('add_plant_3_container'); toggleGrid('plant_display_3')" >Submit</button>
                     </div> <!--CLOSE ADD PLANT CONTAINER-->
                     
                     <!-- shelf display after plant selection-->
-                    <div class="inner_grid">
+                    <div id="plant_display_3" class="inner_grid">
                       <!--shelf-->
                       <div class="shelf_display">
                         <img id="image_shelf_3" class="plant_image" src="Assets/Plants/EmptyShelf.svg" alt="image for shelf">
                         <!--ADD PLANT BUTTON-->
-                        <img id="add_plant_3" class="add_plant" src="Assets/Buttons/AddPlantButton.svg" alt="add plant 3" onclick="toggleContainer('add_plant_3_container')">
+                        <img id="add_plant_3" class="add_plant" src="Assets/Buttons/AddPlantButton.svg" alt="add plant 3" onclick="toggleGrid('plant_display_3'); toggleContainer('add_plant_3_container')">
                       </div>
                       <!--shelf buttons-->
                       <div class="shelf_buttons">

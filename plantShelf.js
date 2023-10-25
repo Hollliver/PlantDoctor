@@ -50,7 +50,16 @@ document.querySelectorAll('.slider__navlink').forEach((bullet, bulletIndex) => {
     else {
         x.style.display = "none";
     }
+ }
 
+ function toggleGrid (shelfDisplayId) {
+    var y = document.getElementById(shelfDisplayId);
+    if (y.style.display === "grid") {
+        y.style.display = "none";
+    }
+    else {
+        y.style.display = "grid";
+    }
  }
 // update shelf with image for plant selection
 function updateShelf(imageId, dropdownId) {
