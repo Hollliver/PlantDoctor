@@ -85,19 +85,19 @@ document.querySelectorAll('.slider__navlink').forEach((bullet, bulletIndex) => {
     }
  }
 
- //DOESNT WORK
-//var plantDropdown = document.getElementById('houseplant');
-//var selectedPlantImage = document.getElementById('image_shelf_3');
-//var submitPlantButton = document.getElementById('plant_select_button');
-//submitPlantButton.addEventListener('click', function() {
-//const selectedPlant = plantDropdown.value;
-//selectedPlantImage.src = "Assets/Plants/" + selectedPlant + '.svg';
-//})
+function updateShelf() {
+    //get correct shelf space for image
+    let imageForUpdate = document.getElementById('image_shelf_3');
+    //get plant name for display
+    let selectedPlant = document.getElementById('houseplant');
+    let plant = selectedPlant.value;
+    // change shelf img src to display houseplant
+    imageForUpdate.src ="Assets/Plants/" + plant + ".svg";
+}
 
-function updateImageTest () { // WORKS
-  var imageForUpdate = document.getElementById('image_shelf_3');
- imageForUpdate.src ="Assets/Plants/SwissCheesePlant.svg";
-    
+function removeAddPlantButton() {
+    let addPlantButton = document.getElementById('add_plant_3');
+    addPlantButton.style.display = "none";
 }
 
  // SHELF OBJECTS
