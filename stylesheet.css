@@ -9,7 +9,7 @@ body {
     background-color: white;
     padding: 10px;
     padding-left: 0px;
-    
+
 }
 
 .navLinks {
@@ -43,8 +43,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
-    
+    justify-content: center;    
+
 }
 
 h1 {
@@ -242,11 +242,6 @@ h1 {
     transform: rotate(270deg);
 }
 
-/* IS THIS NEEDED? */
-#previous::after,
-#next::after {
-    border-color: blue;
-}
 /* Breadcrumbs */
 .slider__nav {
     position: absolute;
@@ -286,7 +281,6 @@ h1 {
 }
 
 /* CSS for plantShelfTool.html */
-
 #plant_shelf_tool {
     background-image: url('Assets/leafBackground.svg');
     background-size: cover;
@@ -341,7 +335,6 @@ h1 {
     grid-auto-columns: 30%;
     grid-template-rows: repeat(3, 1fr);
     grid-auto-rows: 30%;
-    /* grid-gap:# */
 }
 
 #shelf_1 {
@@ -359,7 +352,7 @@ h1 {
     grid-row: 2/4;
 }
 
-/*add plant to shelf*/
+/*add plant to shelf - EDIT: condense css with class/ID */
 #add_plant_1_container { 
     display: none;
     background-color: white;
@@ -390,14 +383,24 @@ h1 {
     padding: 10%;
     position: relative;
 }
-
-
+/*button to close add plant container */
 .close_add_plant {
-    width: 5%;
-    height: 5%;
-    /* fix position to top right corner */
+    width: auto;
+    height: auto;
+    border: 2px solid #d2584e;
+    color:#d2584e;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    cursor: pointer;
 }
 
+.shelf_number {
+    color: #d2584e;
+    padding-top: 10%;
+
+}
+/*submit plant option*/
 .plant_select_button {
     background-color: #6bb153;
     border: none;
@@ -407,11 +410,11 @@ h1 {
     text-align: center;
     color: white;
     border-radius: 15px;
-    position: relative; 
-    cursor: pointer;
-    
+    position: absolute; 
+    bottom: 20%;
+    left: 45%;
+    cursor: pointer;   
 }
-
 
 /*individual shelves */
 .inner_grid {
@@ -423,7 +426,7 @@ h1 {
     grid-template-rows: repeat(4, 1fr);
     grid-auto-rows: 25%;
   }
-  
+/*shelf display after plant selection */
 .shelf_display {   
     grid-column: 1/2;
     grid-row: 1/4;  
@@ -438,7 +441,7 @@ h1 {
     width: 100%;
     height: 100%;      
 }
-
+/*add plant button*/
 .add_plant {
     height: 30%;
     width: 30%;
@@ -450,7 +453,7 @@ h1 {
     content: url('Assets/Buttons/AddPlantButtonRed.svg');
     cursor: pointer;
 }
-
+/*info/water/diagnose*/
 .shelf_buttons {
     grid-column: 1/2;
     grid-row: 4/5;

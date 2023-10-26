@@ -25,6 +25,8 @@
             <h1 id="plant_shelf_title"> Plant Shelf </h1>
             <div id="transparent_shelf_wrapper">
               <!--contains transparent box-->
+              <!--stores hidden divs: info/water/diagnose/edit/save-->
+              
               <div id="shelf_container">
                 <!--contains light green background-->
                 <div class="outer_grid">
@@ -37,10 +39,10 @@
                       <!--button to close add plant container-->
                       <button class="close_add_plant" onclick="toggleGrid('plant_display_1'); toggleContainer('add_plant_1_container')">X</button>
                       <!--content-->
-                      <h3>Shelf 1</h3>
+                      <h3 class="shelf_number">Shelf 1</h3>
                       <!--plant dropdown selection-->
                       <label for="houseplant_dropdown">Select a houseplant</label>
-                        <select id="houseplant_1" name="houseplant_dropdown">
+                        <select id="houseplant_1" class="houseplant" name="houseplant_dropdown">
                           <option value="caladium">Caladium</option>
                           <option value="chineseMoneyPlant">Chinese Money Plant</option>
                           <option value="parlourPalm">Parlour Palm</option>
@@ -84,10 +86,10 @@
                       <!--button to close add plant container-->
                       <button class="close_add_plant" onclick="toggleGrid('plant_display_2'); toggleContainer('add_plant_2_container')">X</button>
                       <!--content-->
-                      <h3>Shelf 2</h3>
+                      <h3 class="shelf_number">Shelf 2</h3>
                       <!--plant dropdown selection-->
                       <label for="houseplant_dropdown">Select a houseplant</label>
-                        <select id="houseplant_2" name="houseplant_dropdown">
+                        <select id="houseplant_2" class="houseplant" name="houseplant_dropdown">
                           <option value="caladium">Caladium</option>
                           <option value="chineseMoneyPlant">Chinese Money Plant</option>
                           <option value="parlourPalm">Parlour Palm</option>
@@ -131,10 +133,10 @@
                       <!--button to close add plant container-->
                       <button class="close_add_plant" onclick="toggleContainer('add_plant_3_container'); toggleGrid('plant_display_3')">X</button>
                       <!--content-->
-                      <h3>Shelf 3</h3>
+                      <h3 class="shelf_number">Shelf 3</h3>
                       <!--plant dropdown selection-->
                       <label for="houseplant_dropdown">Select a houseplant</label>
-                        <select id="houseplant_3" name="houseplant_dropdown">
+                        <select id="houseplant_3" class="houseplant" name="houseplant_dropdown">
                           <option value="caladium">Caladium</option>
                           <option value="chineseMoneyPlant">Chinese Money Plant</option>
                           <option value="parlourPalm">Parlour Palm</option>
