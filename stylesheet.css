@@ -120,16 +120,19 @@ h1 {
 
 .summary {
     width: 70%;
-    height: 15%;
-    background-color: #d2584e;
+    height: auto;
+    background-color: #172C22;
     border: none;
-    padding: 10px 15px;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     color: white;
     border-radius: 50px;
-    
+    margin: 15px;
+}
 
+#tutorial_title {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /*Stores carousel and arrow columns*/
@@ -167,12 +170,6 @@ h1 {
     height: 80%;             
 }
 
-/*
-.slide__Image {
-    width:100%;    
-}
-*/ 
-
 .slider {
     display:block;
     position: relative;
@@ -204,6 +201,11 @@ h1 {
 
 .slider__slide.active {
     opacity: 1;
+}
+
+.slide_image {
+    max-height: 100%;
+    max-width: auto;
 }
 
 /*Next arrow column*/
@@ -242,7 +244,7 @@ h1 {
 /* Breadcrumbs */
 .slider__nav {
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -264,16 +266,32 @@ h1 {
 }
 
 /*EDIT - MAY NEED ADDING TO CAROUSEL JS*/
-.tutorialText {
-    width: 40%;
-    height: 15%;
+.tutorial_text {
+    width: 60%;
+    height: 10%;
     background-color: #d2584e;
     border: none;
     padding: 10px 15px;
     font-size: 20px;
-    text-align: center;
     color: white;
     border-radius: 50px;
+    margin: 15px; 
+    display: flex;
+    justify-content: center;  
+}
+
+
+.slide_text {
+    font-size: 18px;  
+    transition: 0.5s;
+    opacity: 0;
+    position: absolute;
+          
+}
+
+.slide_text.active {
+    opacity: 1;
+    text-align: center;
 }
 
 /* CSS for plantShelfTool.html */

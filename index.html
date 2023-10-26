@@ -31,8 +31,12 @@
         <section id="tutorial">
             <!--scroll to top section/hero image-->
             <img class="scrollUp" src="Assets/downArrowWhite.svg" alt="down arrow button" onclick="scrollToElement('top')">
-            <div class="tutorialWrapper"> 
-                <h2 class="summary">Lorem ipsum</h2>
+            <div class="tutorialWrapper">
+                <div class="summary"> 
+                    <p id="tutorial_title">GUIDE TO PLANT DOCTOR:</p>
+                    <p>Plant Doctor is an interactive tool for tracking and maintaining the health of plants.</p>
+                    <p>Prevent your houseplants from dying with Plant Shelf.</p>
+                </div>
                 <div class="columns">
                     <!--prev arrow-->
                     <div class="column1">
@@ -43,16 +47,16 @@
                         <div class="slider">
                             <div class="slider__slides">
                                 <div class="slider__slide active">
-                                <img class="slide__Image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Shakuzoji_Kuginuki_Jizo-3586.jpg/800px-Shakuzoji_Kuginuki_Jizo-3586.jpg" alt="A rooftop in Japan" />
+                                <img class="slide_image" src="Assets/Carousel/CarouselOne.svg" alt="Add plants to plant shelf" />
                                 </div>
                                 <div class="slider__slide">
-                                <img class="slide__Image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Stirling_Castle_Main_Gate.jpg/800px-Stirling_Castle_Main_Gate.jpg" alt="A castle in Scotland" />
+                                <img class="slide_image" src="Assets/Carousel/CarouselTwo.svg" alt="Available houseplants" />
                                 </div>
                                 <div class="slider__slide">
-                                <img class="slide__Image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Xiaoqingshan_Farm_Product_Market%2C_Puding_County%2C_Guizhou%2C_China2.jpg/800px-Xiaoqingshan_Farm_Product_Market%2C_Puding_County%2C_Guizhou%2C_China2.jpg" alt="A street market in China" />
+                                <img class="slide_image" src="Assets/Carousel/CarouselThree.svg" alt="Buttons on plant shelf: info, water, diagnose" />
                                 </div>
                                 <div class="slider__slide">
-                                <img class="slide__Image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Patung_Buddha_Tidur_Trowulan.jpg/800px-Patung_Buddha_Tidur_Trowulan.jpg" alt="A statue of the Buddha in Thailand" />
+                                <img class="slide_image" src="Assets/Carousel/CarouselFour.svg" alt="Vegetable Patch - coming soon" />
                                 </div>
                             </div>
                         </div>
@@ -71,7 +75,20 @@
                 </div>
                 <!--carousel text-->
                 <!--add js function to change text-->
-                <p class="tutorialText">Tutorial text</p>
+                <div class="tutorial_text">
+                    <div class="slide_text active">
+                        <p>Click on the button to add a plant to the Plant Shelf.</p>
+                    </div>
+                    <div class="slide_text">
+                        <p>Display a variety of different houseplants.</p>
+                    </div>
+                    <div class="slide_text">
+                        <p>Access plant information.Track watering schedule. Diagnose any plant health issues.</p>
+                    </div>
+                    <div class="slide_text">
+                        <p>Future development: Vegetable Patch - track and manage your homegrown produce.</p>
+                    </div>
+                </div>
             </div>
         </section>
     <script src="/plantShelf.js"></script>
