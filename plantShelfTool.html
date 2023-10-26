@@ -26,7 +26,21 @@
             <div id="transparent_shelf_wrapper">
               <!--contains transparent box-->
               <!--stores hidden divs: info/water/diagnose/edit/save-->
-              
+              <div id="info_container" class="hidden_div">
+                <button class="close_div" onclick="toggleContainer('info_container')">X</button>
+                <h3 class="hidden_container_title">Information</h3>
+                <p class="hidden_container_text"> Feature coming soon: view plant information and care tips.</p>
+              </div>
+              <div id="water_container" class="hidden_div">
+                <button class="close_div" onclick="toggleContainer('water_container')">X</button>
+                <h3 class="hidden_container_title">Water Schedule</h3>
+                <p class="hidden_container_text"> Feature coming soon: set a watering schedule and receive alerts when your plant is thirsty.</p>
+              </div>
+              <div id="diagnose_container" class="hidden_div">
+                <button class="close_div" onclick="toggleContainer('diagnose_container')">X</button>
+                <h3 class="hidden_container_title">Plant Doctor</h3>
+                <p class="hidden_container_text"> Feature coming soon: diagnose any issues with the Plant Doctor.</p>
+              </div>
               <div id="shelf_container">
                 <!--contains light green background-->
                 <div class="outer_grid">
@@ -64,15 +78,15 @@
                       <div class="shelf_buttons">
                         <!--info button-->
                         <div class="information">
-                          <img src="Assets/Buttons/InfoButton.svg" alt="information button">
+                          <img src="Assets/Buttons/InfoButton.svg" alt="information button" onclick="toggleContainer('info_container')">
                         </div>
                         <!--water button-->
                         <div class="water">
-                          <img src="Assets/Buttons/WaterButton.svg" alt="water button">
+                          <img src="Assets/Buttons/WaterButton.svg" alt="water button" onclick="toggleContainer('water_container')">
                         </div>
                         <!--diagnose button-->
                         <div class="diagnose">
-                          <img src="Assets/Buttons/DiagnoseButton.svg" alt="diagnose button">
+                          <img src="Assets/Buttons/DiagnoseButton.svg" alt="diagnose button" onclick="toggleContainer('diagnose_container')">
                         </div>
                       </div>
 
@@ -111,15 +125,15 @@
                       <div class="shelf_buttons">
                         <!--info button-->
                         <div class="information">
-                          <img src="Assets/Buttons/InfoButton.svg" alt="information button">
+                          <img src="Assets/Buttons/InfoButton.svg" alt="information button" onclick="toggleContainer('info_container')">
                         </div>
                         <!--water button-->
                         <div class="water">
-                          <img src="Assets/Buttons/WaterButton.svg" alt="water button">
+                          <img src="Assets/Buttons/WaterButton.svg" alt="water button" onclick="toggleContainer('water_container')">
                         </div>
                         <!--diagnose button-->
                         <div class="diagnose">
-                          <img src="Assets/Buttons/DiagnoseButton.svg" alt="diagnose button">
+                          <img src="Assets/Buttons/DiagnoseButton.svg" alt="diagnose button" onclick="toggleContainer('diagnose_container')">
                         </div>
                       </div>
 
@@ -159,15 +173,15 @@
                       <div class="shelf_buttons">
                         <!--info button-->
                         <div class="information">
-                          <img src="Assets/Buttons/InfoButton.svg" alt="information button">
+                          <img src="Assets/Buttons/InfoButton.svg" alt="information button" onclick="toggleContainer('info_container')">
                         </div>
                         <!--water button-->
                         <div class="water">
-                          <img src="Assets/Buttons/WaterButton.svg" alt="water button">
+                          <img src="Assets/Buttons/WaterButton.svg" alt="water button" onclick="toggleContainer('water_container')">
                         </div>
                         <!--diagnose button-->
                         <div class="diagnose">
-                          <img src="Assets/Buttons/DiagnoseButton.svg" alt="diagnose button">
+                          <img src="Assets/Buttons/DiagnoseButton.svg" alt="diagnose button" onclick="toggleContainer('diagnose_container')">
                         </div>
                       </div> <!--close shelf buttons-->
                     </div> <!-- close inner_grid-->
