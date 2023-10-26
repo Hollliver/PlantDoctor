@@ -41,6 +41,16 @@
                 <h3 class="hidden_container_title">Plant Doctor</h3>
                 <p class="hidden_container_text"> Feature coming soon: diagnose any issues with the Plant Doctor.</p>
               </div>
+              <div id="edit_container" class="hidden_div">
+                <button class="close_div" onclick="toggleContainer('edit_container')">X</button>
+                <h3 class="hidden_container_title">Edit Plant Shelf</h3>
+                <p class="hidden_container_text"> Feature coming soon: edit Plant Shelf layout, change pot design, delete plants.</p>
+              </div>
+              <div id="save_container" class="hidden_div">
+                <button class="close_div" onclick="toggleContainer('save_container')">X</button>
+                <h3 class="hidden_container_title">Plant Doctor</h3>
+                <p class="hidden_container_text"> Feature coming soon: save Plant Shelf for future visits.</p>
+              </div>
               <div id="shelf_container">
                 <!--contains light green background-->
                 <div class="outer_grid">
@@ -191,8 +201,8 @@
 
               <!--EDIT and SAVE buttton. Edit allows shelf deletion. Save links to save function.-->
               <div class="manage_shelf_button_container">
-                <button id="edit_button" class="manage_shelf_buttons">Edit</button></a>
-                <button id="save_button" class="manage_shelf_buttons">Save</button></a>
+                <button id="edit_button" class="manage_shelf_buttons" onclick="toggleContainer('edit_container')">Edit</button></a>
+                <button id="save_button" class="manage_shelf_buttons" onclick="toggleContainer('save_container')"> Save</button></a>
               </div> <!--close manage shelf button container-->
             </div> <!-- close transparent shelf wrapper-->
           </section>
